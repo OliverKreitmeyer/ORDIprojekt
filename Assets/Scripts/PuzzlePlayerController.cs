@@ -5,11 +5,14 @@ using UnityEngine.InputSystem;
 
 public class PuzzlePlayerController : MonoBehaviour
 {
-    public Transform movepoint;
+    [SerializeField] private Transform movepoint;
     private Vector2 movement;
-    public LayerMask stopsMovement; //mozda bolje kao integer
-    public LayerMask boxLayer;
-    private Vector3 playerDirection = new Vector3(1,0);
+    private Vector3 playerDirection = new Vector3(1, 0);
+    [SerializeField] private LayerMask stopsMovement; //mozda bolje kao integer
+    [SerializeField] private LayerMask boxLayer;
+    private bool hasKey=false;
+    [SerializeField] GameObject key;
+    [SerializeField] GameObject chest;
 
     private void Awake() {
         movepoint.parent = null;
@@ -45,26 +48,24 @@ public class PuzzlePlayerController : MonoBehaviour
         }
 
         //Pushing boxes
-        //raycastanje na duljinu od 1 i layer Boxes
-        //ako kliknem space provjeri moze li se pomaknut kutija u tom smjeru gdje je i zraka poslana
-        //ako moze pomakni ju
         if(Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, playerDirection, 1);
 
             if (hitInfo.collider != null && hitInfo.collider.gameObject.layer == LayerMask.NameToLayer("Boxes")) //promijeni da koristi boxlayer
             {
-                Debug.Log("vektor smjera: "+ playerDirection.ToString());
+                
                 GameObject box = hitInfo.collider.gameObject;
-                //provjeriti je li u tom smjeru za jedno mjesto zid ili nije -> ako nije pomaknut kutiju
-                RaycastHit2D wallHit = Physics2D.Raycast(box.transform.position, playerDirection, 1);
-                Debug.Log("wallhit: "+wallHit);
-                if (!Physics2D.OverlapCircle(box.transform.position + playerDirection, .2f, stopsMovement)){
+                if (!(Physics2D.OverlapCircle(box.transform.position + playerDirection, .2f, stopsMovement) ||
+                        Physics2D.OverlapCircle(box.transform.position + playerDirection, .2f, boxLayer)))
+                {
                     box.transform.position = box.transform.position + playerDirection;
                 }
                 
             }
         }
+
+        //Obtaining key and opening chest
     }
     
     private void OnMovement(InputValue value) {
