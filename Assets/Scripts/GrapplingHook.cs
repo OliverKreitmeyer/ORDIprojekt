@@ -68,4 +68,10 @@ public class GrapplingHook : MonoBehaviour
         rope.enabled = false;
         isGrappling = false;
     }
+
+    public bool IsGrappling()
+    {
+        return isGrappling;
+    }
+    
 }
