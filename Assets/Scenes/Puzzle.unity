@@ -53322,7 +53322,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.14716971, g: 0.12967595, b: 0.12967595, a: 1}
+  m_Color: {r: 0.21176471, g: 0.2, b: 0.25490198, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -53684,6 +53684,22 @@ PrefabInstance:
     - target: {fileID: 8855948826106156094, guid: 3018e842e6627544589a7be48a6c641b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022308536936808435, guid: 3018e842e6627544589a7be48a6c641b, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022308536936808435, guid: 3018e842e6627544589a7be48a6c641b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022308536936808435, guid: 3018e842e6627544589a7be48a6c641b, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022308536936808435, guid: 3018e842e6627544589a7be48a6c641b, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
