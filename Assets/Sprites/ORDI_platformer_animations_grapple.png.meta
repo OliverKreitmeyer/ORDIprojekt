@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8074534c9375942cc8289852f2b15869
+guid: 92352804217319d25a3535ad4592e2dc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ORDI_platformer_animations_idle_0
+      name: ORDI_platformer_animations_grapple_0
       rect:
         serializedVersion: 2
         x: 3
         y: 0
         width: 27
-        height: 29
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddf79a90cb92a710eb8ae9c03fe625e0
-      internalID: 1948002560
+      spriteID: 66517e9625a63ad06a1f4e204b5b67eb
+      internalID: 390819670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ORDI_platformer_animations_idle_1
+      name: ORDI_platformer_animations_grapple_1
       rect:
         serializedVersion: 2
         x: 35
         y: 0
-        width: 27
-        height: 30
+        width: 22
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,19 +132,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37fa74c4e8850ac9cb8c28569471a38f
-      internalID: 1154122284
+      spriteID: 93bcb6fec7ddc89faa862ccd35db217d
+      internalID: -2043010704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ORDI_platformer_animations_idle_2
+      name: ORDI_platformer_animations_grapple_2
       rect:
         serializedVersion: 2
-        x: 67
-        y: 0
-        width: 27
+        x: 69
+        y: 2
+        width: 22
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -153,8 +153,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a030779828e5d8717a1bb346632639c4
-      internalID: -943864371
+      spriteID: b8691966810c969f7a6672635ddbd947
+      internalID: -1841983543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORDI_platformer_animations_grapple_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308525e91d22c89299d65942b8f0f7db
+      internalID: -1600326864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORDI_platformer_animations_grapple_4
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ac1e1b02ce339fabda7467e67f1033
+      internalID: 688156751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORDI_platformer_animations_grapple_5
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 0
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91bc0c86de183ae6925f51a45b79dd9
+      internalID: -1760330157
       vertices: []
       indices: 
       edges: []
@@ -170,9 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ORDI_platformer_animations_idle_0: 1948002560
-      ORDI_platformer_animations_idle_1: 1154122284
-      ORDI_platformer_animations_idle_2: -943864371
+      ORDI_platformer_animations_grapple_0: 390819670
+      ORDI_platformer_animations_grapple_1: -2043010704
+      ORDI_platformer_animations_grapple_2: -1841983543
+      ORDI_platformer_animations_grapple_3: -1600326864
+      ORDI_platformer_animations_grapple_4: 688156751
+      ORDI_platformer_animations_grapple_5: -1760330157
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
