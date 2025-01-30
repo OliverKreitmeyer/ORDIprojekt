@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1301872663723434912}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.0547686, y: 0.41878998, z: -10}
+  m_LocalPosition: {x: -1.9252954, y: -0.00041002035, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 7574031724579384502}
   - component: {fileID: 8216253329716350030}
   - component: {fileID: 3893190236597467237}
+  - component: {fileID: 8055487791187365745}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -333,7 +334,7 @@ DistanceJoint2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092067512484954662}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 0}
@@ -353,7 +354,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092067512484954662}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08b27ee9e944311478e78a4e97538241, type: 3}
   m_Name: 
@@ -420,6 +421,27 @@ CircleCollider2D:
   m_Offset: {x: -0.0008043051, y: -0.016524762}
   serializedVersion: 2
   m_Radius: 0.44068363
+--- !u!95 &8055487791187365745
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092067512484954662}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19dd6288747692e58bc1e7ce458e8be8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2713257877007976439
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,7 +759,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 4231605518172486313}
+  m_LookAt: {fileID: 5811643305427125498}
   m_Follow: {fileID: 5811643305427125498}
   m_Lens:
     FieldOfView: 7
@@ -771,6 +793,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BoundingShape2D: {fileID: 0}
-  m_Damping: 0.4
+  m_Damping: 0.5
   m_MaxWindowSize: -1
   m_Padding: 0
