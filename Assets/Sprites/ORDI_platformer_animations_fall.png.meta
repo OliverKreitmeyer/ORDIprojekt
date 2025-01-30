@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8074534c9375942cc8289852f2b15869
+guid: 752dc8bca2a3247688d70bc54a98cf07
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,33 +97,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ORDI_platformer_animations_idle_0
+      name: ORDI_platformer_animations_fall_0
       rect:
         serializedVersion: 2
         x: 3
         y: 0
         width: 27
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02c7f77333d63474f9d3a85213675b28
-      internalID: -470376071
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ORDI_platformer_animations_idle_1
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 0
-        width: 27
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -132,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2541c9fe9600f498394f992f90f2c885
-      internalID: -1901606163
+      spriteID: 1c54b7849b53a486096e03dd6ad61797
+      internalID: 1279496898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ORDI_platformer_animations_idle_2
+      name: ORDI_platformer_animations_fall_1
       rect:
         serializedVersion: 2
-        x: 67
+        x: 32
         y: 0
-        width: 27
-        height: 30
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +132,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c30282bf2d66e4b9582a9e4e637a4083
-      internalID: 909514833
+      spriteID: 8567a16f2597c43a6b230c7197ca7fca
+      internalID: -312795139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORDI_platformer_animations_fall_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a463aa8cadc4c404195469dfc7eebcf7
+      internalID: -1670495127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORDI_platformer_animations_fall_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c34a0a6967e4aca961318f50dd5e26
+      internalID: 557885770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORDI_platformer_animations_fall_4
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb228fa21d594c7491a7da7c8968777
+      internalID: -429319150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORDI_platformer_animations_fall_5
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 0
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1291a89a0a7e54dada58231f447a7292
+      internalID: 915925360
       vertices: []
       indices: 
       edges: []
@@ -170,9 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ORDI_platformer_animations_idle_0: -470376071
-      ORDI_platformer_animations_idle_1: -1901606163
-      ORDI_platformer_animations_idle_2: 909514833
+      ORDI_platformer_animations_fall_0: 1279496898
+      ORDI_platformer_animations_fall_1: -312795139
+      ORDI_platformer_animations_fall_2: -1670495127
+      ORDI_platformer_animations_fall_3: 557885770
+      ORDI_platformer_animations_fall_4: -429319150
+      ORDI_platformer_animations_fall_5: 915925360
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

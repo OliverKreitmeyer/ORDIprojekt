@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8074534c9375942cc8289852f2b15869
+guid: 8d6f1d99a8591470190f9d06ac7826c9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ORDI_platformer_animations_idle_0
+      name: ORDI_platformer_animations_jump_0
       rect:
         serializedVersion: 2
         x: 3
         y: 0
-        width: 27
-        height: 29
+        width: 26
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02c7f77333d63474f9d3a85213675b28
-      internalID: -470376071
+      spriteID: c865c115a9bd74ed7af92620e30e83eb
+      internalID: 174261995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ORDI_platformer_animations_idle_1
+      name: ORDI_platformer_animations_jump_1
       rect:
         serializedVersion: 2
         x: 35
-        y: 0
-        width: 27
-        height: 30
+        y: 1
+        width: 19
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2541c9fe9600f498394f992f90f2c885
-      internalID: -1901606163
+      spriteID: 4157b8650db944ecbbf7b8354e295506
+      internalID: -589930985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ORDI_platformer_animations_idle_2
+      name: ORDI_platformer_animations_jump_2
       rect:
         serializedVersion: 2
-        x: 67
+        x: 65
         y: 0
-        width: 27
-        height: 30
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c30282bf2d66e4b9582a9e4e637a4083
-      internalID: 909514833
+      spriteID: a6349ea3af5b84434b632933e3d91d9d
+      internalID: 1009586338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORDI_platformer_animations_jump_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1cd74ad81104915aca4c0dc7d21ac5
+      internalID: 1066893210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORDI_platformer_animations_jump_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551396f2d577e463fb6ae93f7b464b22
+      internalID: -775474576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORDI_platformer_animations_jump_5
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 0
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4907378102e984e319e8411cca4e6aae
+      internalID: 1263123501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORDI_platformer_animations_jump_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ecb2e698bac6495aa3e9f027287ed50
+      internalID: 690199925
       vertices: []
       indices: 
       edges: []
@@ -170,9 +254,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ORDI_platformer_animations_idle_0: -470376071
-      ORDI_platformer_animations_idle_1: -1901606163
-      ORDI_platformer_animations_idle_2: 909514833
+      ORDI_platformer_animations_jump_0: 174261995
+      ORDI_platformer_animations_jump_1: -589930985
+      ORDI_platformer_animations_jump_2: 1009586338
+      ORDI_platformer_animations_jump_3: 1066893210
+      ORDI_platformer_animations_jump_4: -775474576
+      ORDI_platformer_animations_jump_5: 1263123501
+      ORDI_platformer_animations_jump_6: 690199925
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
