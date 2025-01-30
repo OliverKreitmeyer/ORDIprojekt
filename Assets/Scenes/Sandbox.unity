@@ -868,7 +868,7 @@ MonoBehaviour:
   grappleLength: 2
   grapplingLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 384
   rope: {fileID: 2044698732}
 --- !u!232 &1466664085
 DistanceJoint2D:
