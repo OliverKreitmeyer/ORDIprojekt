@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+
 
 public class PuzzlePlayerController : MonoBehaviour
 {
@@ -15,6 +17,7 @@ public class PuzzlePlayerController : MonoBehaviour
     public bool hasKey=false;
     private GameObject pushedBox;
     private Vector3? pushedBoxMovepoint;
+    private bool isFacingRight = true;
 
     private void Awake() {
         movepoint.parent = null;
@@ -27,6 +30,9 @@ public class PuzzlePlayerController : MonoBehaviour
         playerAnimator.SetFloat("yVelocity", movement.y);
 
         transform.position = Vector2.MoveTowards(transform.position,movepoint.position, movementSpeed * Time.deltaTime);
+
+        if ((isFacingRight && movement.x < 0) || (!isFacingRight && movement.x > 0))
+            FlipHorizontal();
 
         if(Vector2.Distance(transform.position,movepoint.position) <= .05f) {
             if (Mathf.Abs(movement.x) == 1f) {
@@ -76,9 +82,20 @@ public class PuzzlePlayerController : MonoBehaviour
                     pushedBoxMovepoint = box.transform.position + playerDirection;
                 }      
             }
-        }        
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("Puzzle");
+        }
     }
-    
+    private void FlipHorizontal()
+    {
+        playerAnimator.transform.Rotate(0, 180, 0);
+        isFacingRight = !isFacingRight;
+    }
+
+
     private void OnMovement(InputValue value) {
         movement = value.Get<Vector2>();
     }
