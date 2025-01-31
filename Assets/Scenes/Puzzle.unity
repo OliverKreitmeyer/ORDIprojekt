@@ -741,9 +741,10 @@ GameObject:
   - component: {fileID: 367214133}
   - component: {fileID: 367214132}
   - component: {fileID: 367214134}
-  - component: {fileID: 367214135}
+  - component: {fileID: 367214136}
+  - component: {fileID: 367214137}
   m_Layer: 0
-  m_Name: Chest
+  m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -787,11 +788,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -273931925
-  m_SortingLayer: 1
+  m_SortingLayerID: -1643779085
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.11163887, g: 0.5698112, b: 0.11073687, a: 1}
+  m_Sprite: {fileID: 183955412, guid: 30b96721f9dab4b3994c5f6fb4adcf56, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -811,7 +812,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.5, y: 26.5, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.7, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -848,7 +849,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0027418137, y: 0.2823677}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -859,9 +860,30 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.62716484, y: 0.4352646}
   m_EdgeRadius: 0
---- !u!114 &367214135
+--- !u!95 &367214136
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367214131}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c134c46d23670844d8b4a7c0880b7147, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &367214137
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -870,7 +892,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 367214131}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a49ef334ac3164448cab6c439f526ad, type: 3}
+  m_Script: {fileID: 11500000, guid: a4a1a777044af8749ad69068652fc4f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &372415755
@@ -26550,6 +26572,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582445571}
     m_Modifications:
+    - target: {fileID: 2520898732699883040, guid: ee67b25eacde20b44b6a3242d08e8b19, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5583689388054008480, guid: ee67b25eacde20b44b6a3242d08e8b19, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8
@@ -26627,12 +26653,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6477804998058051650, guid: ee67b25eacde20b44b6a3242d08e8b19, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477804998058051650, guid: ee67b25eacde20b44b6a3242d08e8b19, type: 3}
       propertyPath: m_SortingLayer
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6477804998058051650, guid: ee67b25eacde20b44b6a3242d08e8b19, type: 3}
       propertyPath: m_SortingLayerID
       value: 667938441
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079417011542896047, guid: ee67b25eacde20b44b6a3242d08e8b19, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27506,8 +27540,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 667938441
-  m_SortingLayer: 3
+  m_SortingLayerID: -1643779085
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -53362,11 +53396,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2114288916}
   - component: {fileID: 2114288915}
-  - component: {fileID: 2114288917}
   - component: {fileID: 2114288918}
   - component: {fileID: 2114288919}
+  - component: {fileID: 2114288920}
   m_Layer: 0
-  m_Name: Key
+  m_Name: Grappling Hook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53439,18 +53473,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2114288917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2114288914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d080130edf6320745aabc813ce43d66b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2114288918
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53523,6 +53545,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2114288920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114288914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d080130edf6320745aabc813ce43d66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorAnimator: {fileID: 367214136}
 --- !u!4 &2121552462 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5583689388054008480, guid: ee67b25eacde20b44b6a3242d08e8b19, type: 3}
@@ -53711,10 +53746,10 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 726610115}
+  - {fileID: 367214133}
   - {fileID: 954547389}
   - {fileID: 5815099159184008526}
   - {fileID: 582445571}
   - {fileID: 2114288916}
-  - {fileID: 367214133}
   - {fileID: 2069843881}
   - {fileID: 1986455151}
