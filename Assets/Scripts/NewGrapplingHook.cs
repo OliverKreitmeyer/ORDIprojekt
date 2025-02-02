@@ -14,6 +14,8 @@ public class NewGrapplingHook : MonoBehaviour
     [HideInInspector] public Vector2 grappleDistanceVector;
     [SerializeField] private float pullSpeed = 4f;
     public bool isGrappling;
+    [SerializeField] private float maxAngle = 8f;
+    [SerializeField] private int rayCount = 8;
 
     void Start()
     {
@@ -46,9 +48,9 @@ public class NewGrapplingHook : MonoBehaviour
         Vector3 mouseWorldPos = playerCam.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPos.z = 0f;
         Vector3 direction = (mouseWorldPos - transform.position).normalized;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, throwDistance, grapplingLayer);
+        RaycastHit2D hit = FindGrapplePointInCone(direction, maxAngle, rayCount);
 
-        if (hit.collider != null)
+        if (hit && hit.collider != null)
         {
             grapplePoint = hit.point;
             grapplePoint.z = 0f;
@@ -64,5 +66,21 @@ public class NewGrapplingHook : MonoBehaviour
         joint.enabled = true;
         joint.distance = Vector2.Distance(transform.position, grapplePoint);
         isGrappling = true;
+    }
+
+    private RaycastHit2D FindGrapplePointInCone(Vector3 baseDirection, float maxAngle, int rayCount)
+    {
+        for (int i = 0; i < rayCount; i++)
+        {
+            float angle = -maxAngle + (2 * maxAngle * i / (rayCount - 1));
+            Vector3 rayDirection = Quaternion.Euler(0, 0, angle) * baseDirection;
+
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, rayDirection, throwDistance, grapplingLayer);
+
+            if (hit.collider != null)
+                return hit;
+        }
+
+        return Physics2D.Raycast(transform.position, baseDirection, throwDistance, grapplingLayer);
     }
 }
