@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PickUpKey : MonoBehaviour
 {
+    [SerializeField] private Animator doorAnimator;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
@@ -11,6 +12,7 @@ public class PickUpKey : MonoBehaviour
             Destroy(gameObject);
             PuzzlePlayerController ppc = other.GetComponent<PuzzlePlayerController>();
             ppc.hasKey = true;
+            doorAnimator.SetTrigger("keyPickUp");
         }
     }
 }
