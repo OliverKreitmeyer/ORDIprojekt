@@ -10,10 +10,17 @@ public class GrapplingHook : MonoBehaviour
     [SerializeField] private LayerMask grapplingLayer;
     [SerializeField] private LineRenderer rope;
 
+
+    [SerializeField] private RopeScript ropeScript;
+    [SerializeField] private float maxDistance = 5f;
+    [SerializeField] private float pullSpeed = 4f;
+    
+
+
     private Vector3 grapplePoint;
     private DistanceJoint2D joint;
     private bool isGrappling = false;
-    private bool grapplingHookFired = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +38,7 @@ public class GrapplingHook : MonoBehaviour
         if (isGrappling)
         {
             if (Input.GetMouseButton(0))
-                joint.distance = Mathf.Max(joint.distance - 5*Time.deltaTime, 1f);
+                joint.distance = Mathf.Max(joint.distance - pullSpeed*Time.deltaTime, 1f);
             if (Input.GetMouseButtonDown(1))
                 ReleaseGrapplingHook();
         }
@@ -68,10 +75,4 @@ public class GrapplingHook : MonoBehaviour
         rope.enabled = false;
         isGrappling = false;
     }
-
-    public bool IsGrappling()
-    {
-        return isGrappling;
-    }
-    
 }
