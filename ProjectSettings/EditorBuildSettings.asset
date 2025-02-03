@@ -12,7 +12,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Floor 1.unity
     guid: d0ae3ee8990f14ea39ee810b6b66c5c9
   - enabled: 1
+    path: Assets/Scenes/Puzzle.unity
+    guid: 022217fa53db4004eaf8e1eb4d1c8375
+  - enabled: 1
     path: Assets/Scenes/Floor 2.unity
     guid: 444659235a91db19da8fa1e502cc53b4
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: 0a6fba1456ac4efdf80515d0d7ba1c85
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: fbc8abcb4e026630482b97a22fc966c5, type: 3}

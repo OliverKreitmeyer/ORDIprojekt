@@ -12,7 +12,7 @@ public class GetToFloor2 : MonoBehaviour
         {
             ppc = collision.gameObject.GetComponent<PuzzlePlayerController>();
             if (ppc.hasKey)
-                SceneManager.LoadScene("Floor 1");
+                SceneManager.LoadScene("Floor 2");
         }
     }
 }

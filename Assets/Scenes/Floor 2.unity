@@ -275,7 +275,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 19.8
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -17440,11 +17440,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4308571450414088577, guid: 98c8aeea6c303c074bb4ff3dfee81a72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.0632467
+      value: -0.8305712
       objectReference: {fileID: 0}
     - target: {fileID: 4308571450414088577, guid: 98c8aeea6c303c074bb4ff3dfee81a72, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.030685
+      value: 1.031425
       objectReference: {fileID: 0}
     - target: {fileID: 5811643305427125498, guid: 98c8aeea6c303c074bb4ff3dfee81a72, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18215,6 +18215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1645214718}
   - component: {fileID: 1645214717}
+  - component: {fileID: 1645214719}
   m_Layer: 0
   m_Name: FinishZone
   m_TagString: Untagged
@@ -18282,6 +18283,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1645214719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645214716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1264b27c5aeb974e387ac338c3946109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: EndScreen
 --- !u!1 &1673002491
 GameObject:
   m_ObjectHideFlags: 0
@@ -38281,7 +38295,7 @@ PolygonCollider2D:
     m_Paths:
     - - {x: -0.31912994, y: 57.007416}
       - {x: -0.20893914, y: -7.918808}
-      - {x: 23.856295, y: -7.856932}
+      - {x: 23.621172, y: -7.857141}
       - {x: 23.653763, y: 56.94727}
   m_UseDelaunayMesh: 0
 --- !u!4 &1862609475
